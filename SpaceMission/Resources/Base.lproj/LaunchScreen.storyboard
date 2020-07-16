@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SPACEMAN.TTF">
+            <string>Spaceman</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kh5-Rv-ZSL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuttle2" translatesAutoresizingMaskIntoConstraints="NO" id="KKU-5U-HlK">
+                                <rect key="frame" x="100" y="300" width="214" height="296"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Mission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYk-rB-WJD">
+                                <rect key="frame" x="30" y="167" width="354" height="33"/>
+                                <fontDescription key="fontDescription" name="Spaceman" family="spaceman" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PYk-rB-WJD" secondAttribute="trailing" constant="30" id="FXa-c3-9uQ"/>
+                            <constraint firstAttribute="trailing" secondItem="KKU-5U-HlK" secondAttribute="trailing" constant="100" id="Fjr-4e-NTT"/>
+                            <constraint firstAttribute="bottom" secondItem="KKU-5U-HlK" secondAttribute="bottom" constant="300" id="IXY-op-fVa"/>
+                            <constraint firstItem="KKU-5U-HlK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="300" id="JVF-nV-WD9"/>
+                            <constraint firstItem="KKU-5U-HlK" firstAttribute="top" secondItem="PYk-rB-WJD" secondAttribute="bottom" constant="100" id="RO0-Sv-FEg"/>
+                            <constraint firstItem="KKU-5U-HlK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UEn-Cf-4BS"/>
+                            <constraint firstItem="KKU-5U-HlK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UWw-UF-kva"/>
+                            <constraint firstItem="PYk-rB-WJD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WdR-mI-qaN"/>
+                            <constraint firstItem="kh5-Rv-ZSL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XcF-dW-xJm"/>
+                            <constraint firstItem="kh5-Rv-ZSL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bTF-8Z-ur5"/>
+                            <constraint firstAttribute="bottom" secondItem="kh5-Rv-ZSL" secondAttribute="bottom" id="odi-Xe-0w6"/>
+                            <constraint firstItem="KKU-5U-HlK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="100" id="s9f-4w-hJz"/>
+                            <constraint firstItem="kh5-Rv-ZSL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ssv-1h-kqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="256" height="455"/>
+        <image name="shuttle2" width="1720.5" height="1920"/>
+    </resources>
+</document>
